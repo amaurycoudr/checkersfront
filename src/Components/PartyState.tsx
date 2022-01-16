@@ -1,7 +1,9 @@
 import { Color } from "amaurycoudr-checkers/utils/type";
 import Typos from "Components/core/Typos";
 import Piece from "Components/Piece";
+import { capitalizeFirstLetter } from "helper";
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 type PartyStateProps = {
   playerTurn: Color;
@@ -13,18 +15,23 @@ const PartyState: FC<PartyStateProps> = ({
   remainingPieceWhite,
   remainingPieceBlack,
 }) => {
+  const { t } = useTranslation();
   return (
     <div className="relative  select-none overflow-hidden rounded-md z-10 shadow-md ">
       <Background />
       <div className="grid grid-flow-col grid-cols-2 divide-x-2 lg:grid-cols-none lg:grid-flow-row lg:divide-x-0 lg:divide-y-2 divide-slate-500  lg:grid-rows-2 p-5">
         <div className="flex flex-col p-2 items-center">
-          <Typos.H5 className="flex flex-1justify-center">Turn :</Typos.H5>
+          <Typos.H5 className="flex flex-1justify-center">
+            {capitalizeFirstLetter(t("partyState.turn"))}
+          </Typos.H5>
           <div className="h-[6vw] w-[6vw] md:h-[4vw] md:w-[4vw]">
             <Piece type="Pawn" player={playerTurn} />
           </div>
         </div>
         <div className="flex flex-col p-2 ">
-          <Typos.H5 className="flex justify-center">Pieces :</Typos.H5>
+          <Typos.H5 className="flex justify-center">
+            {capitalizeFirstLetter(t("partyState.pieces"))}
+          </Typos.H5>
           <div className="flex ">
             <PieceCount remainingPiece={remainingPieceWhite} color="white" />
             <div className="w-2" />

@@ -4,30 +4,29 @@ import Board from "Components/Board";
 import React, { FC } from "react";
 import { ClassProps } from "types/helper";
 
-type LogoBoxesTypes = "normal" | "large";
+type LogoBoxesTypes = "normal" | "large" | "flex";
 const LogoBoxes: FC<{ size?: LogoBoxesTypes } & ClassProps> = ({
   className,
   size = "normal",
 }) => (
   <div
     className={classNames(
-      "relative z-10 flex",
+      "relative z-10 overflow-hidden flex",
       className,
       {
-        "h-32 w-32 shadow-xl ": size === "large",
+        "h-32 w-32  shadow-xl ": size === "large",
       },
       {
-        "h-16 w-16  shadow-sm": size === "normal",
-      }
+        "h-16 w-16 rounded-md  shadow-sm": size === "normal",
+      },
+      { "flex-1 rounded-md  shadow-sm ": size === "flex" }
     )}
   >
     <div className="flex-1" />
     <div
       className={classNames(
-        "absolute top-0 overflow-hidden  -z-10",
-        "flex",
-        { "h-32 w-32 rounded-xl": size === "large" },
-        { "h-16 w-16 rounded-md": size === "normal" }
+        "absolute top-0 left-0 right-0 bottom-0 -z-10",
+        "flex"
       )}
     >
       <Board

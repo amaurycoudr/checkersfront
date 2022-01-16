@@ -6,7 +6,7 @@ import create from "zustand";
 interface PartyContext {
   party?: CheckersParty;
   partyState?: PartyState;
-  leaveParty: () => void;
+  endParty: () => void;
   startParty: () => void;
   play: (play: PlayJSON) => void;
 }
@@ -14,7 +14,7 @@ interface PartyContext {
 const usePartyContext = create<PartyContext>((set) => {
   return {
     party: undefined,
-    leaveParty: () => {
+    endParty: () => {
       return set({ party: undefined, partyState: undefined });
     },
     startParty: () => {

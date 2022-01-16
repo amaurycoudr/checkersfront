@@ -13,5 +13,28 @@
   },
   "navBar": {
     "switchDark": "change le mode Dark/light"
+  },
+  "winnerModal": {
+    "title": "le Joueur {{color}} a gagné !",
+    "description": "Joueur {{color}} envie de prender t'as revanche ?",
+    "play": "Jouer encore !",
+    "home": "Aller à l'accueil"
+  },
+  "restartModal": {
+    "title": "Abandonner la partie en cours",
+    "description": "Sur de vouloir recommencer la partie ?",
+    "cancel": "Continuer",
+    "restart": "Recommencer"
+  },
+  "partyState": { "pieces": "pièces :", "turn": "tour :" },
+  "party": {
+    "buttons": {
+      "restart": "Recommencer la partie",
+      "playNewgame": "Lancer une nouvelle partie "
+    }
+  },
+  "color": {
+    "white": "blanc",
+    "black": "noir"
   }
 }

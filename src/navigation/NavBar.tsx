@@ -17,12 +17,11 @@ export default function NavBar() {
 
   return (
     <div className="bg-slate-100 dark:bg-slate-900 transition-all duration-300 font-inter flex flex-col h-[100vh] overflow-hidden  w-[100vw]">
-      <header className="sticky top-0 z-30  flex items-center transition-all duration-300  justify-between px-4 shadow-sm dark:shadow-slate-700  h-header min-h-[72px] ">
-        <Link
-          className="flex items-center relative focus:ring-2  rounded-md  ring-teal-500"
-          to="/"
-        >
-          <LogoBoxes />
+      <header className="sticky top-0 z-30  flex items-center transition-all duration-300  justify-between py-2 px-4 shadow-sm dark:shadow-slate-700  h-header  ">
+        <Link className="flex h-full  items-center relative rounded-md " to="/">
+          <div className="flex h-full aspect-square ">
+            <LogoBoxes size="flex" />
+          </div>
           <Typos.P color="green" className="ml-2 select-none font-lato text-xl">
             {t("base.name")}
           </Typos.P>

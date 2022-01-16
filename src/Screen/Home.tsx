@@ -2,8 +2,9 @@ import { PlayIcon } from "@heroicons/react/solid";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Typos from "Components/core/Typos";
-import LinkButton from "Components/core/LinkButton";
+
 import LogoBoxes from "Components/LogoBoxes";
+import { LinkButton } from "Components/core/Button";
 const Home = () => {
   const { t } = useTranslation();
 

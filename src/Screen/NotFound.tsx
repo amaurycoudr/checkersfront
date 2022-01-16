@@ -1,6 +1,7 @@
 import { PlayIcon } from "@heroicons/react/solid";
+import { LinkButton } from "Components/core/Button";
 import Typos from "Components/core/Typos";
-import LinkButton from "Components/core/LinkButton";
+
 import Piece from "Components/Piece";
 import React from "react";
 import { useTranslation } from "react-i18next";

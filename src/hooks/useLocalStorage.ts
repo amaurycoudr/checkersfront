@@ -7,8 +7,6 @@ const useLocalStorage = <T extends string>(key: string) => {
 
   useEffect(() => {
     const handler = (e: StorageEvent) => {
-      console.log("test", e);
-
       if (e.storageArea === localStorage && e.key === key) {
         setCurrentValue(e.newValue as T);
       }

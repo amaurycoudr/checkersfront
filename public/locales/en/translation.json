@@ -7,5 +7,15 @@
   },
   "navBar": {
     "switchDark": "change le mode Dark/light"
+  },
+  "winnerModal": {
+    "title": "le Joueur {{color}} a gagné !",
+    "description": "{{color}} envie de prender t'as revanche ?",
+    "play": "Jouer encore !",
+    "home": "Retourner a l'accueil"
+  },
+  "color": {
+    "white": "blanc",
+    "black": "noir"
   }
 }
