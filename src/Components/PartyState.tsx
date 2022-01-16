@@ -19,7 +19,7 @@ const PartyState: FC<PartyStateProps> = ({
   return (
     <div className="relative  select-none overflow-hidden rounded-md z-10 shadow-md ">
       <Background />
-      <div className="grid grid-flow-col grid-cols-2 divide-x-2 lg:grid-cols-none lg:grid-flow-row lg:divide-x-0 lg:divide-y-2 divide-slate-500  lg:grid-rows-2 p-5">
+      <div className="grid grid-flow-col grid-cols-2 divide-x-2 sm:grid-cols-none sm:grid-flow-row sm:divide-x-0 sm:divide-y-2 divide-slate-500  sm:grid-rows-2 p-5">
         <div className="flex flex-col p-2 items-center">
           <Typos.H5 className="flex flex-1justify-center">
             {capitalizeFirstLetter(t("partyState.turn"))}

@@ -104,8 +104,8 @@ const Party = () => {
       />
 
       <div className="h-screen w-screen z-10 flex pt-header ">
-        <div className="flex-1  relative flex justify-center lg:flex-row flex-col items-center ">
-          <div className="flex-1 flex-grow-[2] xl:flex-grow flex-col lg:flex-row items-center flex xl:p-10 p-3 justify-end">
+        <div className="flex-1  relative flex justify-center sm:flex-row flex-col items-center ">
+          <div className="flex-1 flex-grow-[2] xl:flex-grow flex-col sm:flex-row items-center flex xl:p-10 p-3 justify-end">
             <div className="relative">
               <PartyState
                 {...{ playerTurn, remainingPieceBlack, remainingPieceWhite }}
@@ -126,7 +126,7 @@ const Party = () => {
 
           <div
             className={classNames(
-              "relative flex w-[96vw] h-[96vw] sm:max-h-[85vh] sm:max-w-[85vh] sm:w-[600px] sm:h-[600px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px] xl:w-[800px] xl:h-[800px]",
+              "relative aspect-square flex w-[96vw] sm:w-[60vw]  sm:max-w-[80vh] ",
               "rounded-md sm:rounded-lg md:rounded-xl lg:rounded-2xl",
               "overflow-hidden shadow-lg dark:shadow-stone-700 z-10 "
             )}
