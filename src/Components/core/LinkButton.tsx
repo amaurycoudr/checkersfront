@@ -1,13 +1,12 @@
 import classNames from "classnames";
-import React, { FC } from "react";
+import React, { FC, ReactNode } from "react";
 import { Link } from "react-router-dom";
-import { ClassProps } from "../type";
+import { ClassProps } from "types/helper";
 type LinkButtonStyle = "primary" | "secondary";
 interface LinkButtonProps {
   type: LinkButtonStyle;
   to: string;
-
-  IconRight?: FC<ClassProps>;
+  iconRight?: ReactNode;
 }
 
 const linkButtonStyles: Record<LinkButtonStyle, string> = {
@@ -21,7 +20,7 @@ const LinkButton: FC<LinkButtonProps & ClassProps> = ({
   children,
   to,
   type,
-  IconRight,
+  iconRight,
   className,
 }) => {
   return (
@@ -34,7 +33,7 @@ const LinkButton: FC<LinkButtonProps & ClassProps> = ({
       )}
     >
       {children}
-      {!!IconRight && <IconRight className="h-5 w-5 ml-1 " />}
+      {!!iconRight && iconRight}
     </Link>
   );
 };

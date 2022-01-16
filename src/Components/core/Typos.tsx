@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React, { FC } from "react";
-import { ClassProps } from "../../type";
+import { ClassProps } from "types/helper";
 type FontColor = "dark" | "medium" | "light" | "green" | "none";
 type Font = FC<ClassProps & { color?: FontColor }>;
 

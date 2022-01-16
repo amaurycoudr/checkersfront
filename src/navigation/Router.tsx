@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./NavBar";
-import Home from "../Screen/Home";
-import NotFound from "../Screen/NotFound";
-import Party from "../Screen/Party";
+import Home from "Screen/Home";
+import NotFound from "Screen/NotFound";
+import Party from "Screen/Party";
 
 const Router = () => {
   return (

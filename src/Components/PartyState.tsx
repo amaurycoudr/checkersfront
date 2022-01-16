@@ -1,8 +1,7 @@
 import { Color } from "amaurycoudr-checkers/utils/type";
+import Typos from "Components/core/Typos";
+import Piece from "Components/Piece";
 import { FC } from "react";
-import Typos from "./core/Typos";
-
-import Piece from "./Piece";
 
 type PartyStateProps = {
   playerTurn: Color;

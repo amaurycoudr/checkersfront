@@ -1,7 +1,9 @@
 import classNames from "classnames";
+import Board from "Components/Board";
+
 import React, { FC } from "react";
-import { ClassProps } from "../type";
-import Board from "./Board";
+import { ClassProps } from "types/helper";
+
 type LogoBoxesTypes = "normal" | "large";
 const LogoBoxes: FC<{ size?: LogoBoxesTypes } & ClassProps> = ({
   className,

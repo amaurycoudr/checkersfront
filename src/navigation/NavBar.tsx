@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { Link, Outlet } from "react-router-dom";
-import logoGitHubWhite from "../assets/logo-github-white.png";
-import logoGitHub from "../assets/logo-github.png";
-import Typos from "../Component/core/Typos";
-import LogoBoxes from "../Component/LogoBoxes";
-import ToggleDark from "../Component/ToggleDark";
-import useDarkMode from "../hooks/useDarkMode";
+import logoGitHubWhite from "assets/logo-github-white.png";
+import logoGitHub from "assets/logo-github.png";
+import Typos from "Components/core/Typos";
+import LogoBoxes from "Components/LogoBoxes";
+import ToggleDark from "Components/ToggleDark";
+import useDarkMode from "hooks/useDarkMode";
 
 export default function NavBar() {
   const { t } = useTranslation();

@@ -1,9 +1,9 @@
 import { PlayIcon } from "@heroicons/react/solid";
+import Typos from "Components/core/Typos";
+import LinkButton from "Components/core/LinkButton";
+import Piece from "Components/Piece";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Typos from "../Component/core/Typos";
-import LinkButton from "../Component/LinkButton";
-import Piece from "../Component/Piece";
 
 const NotFound = () => {
   const { t } = useTranslation();
@@ -26,7 +26,7 @@ const NotFound = () => {
         <LinkButton
           className="ml-2"
           to="/party"
-          IconRight={PlayIcon}
+          iconRight={<PlayIcon className="h-5 w-5 mx-2" />}
           type="secondary"
         >
           {t("notFound.play")}

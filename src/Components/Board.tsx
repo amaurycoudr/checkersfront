@@ -5,9 +5,9 @@ import {
   PieceJSON,
 } from "amaurycoudr-checkers/utils/type";
 import classNames from "classnames";
+import Box from "Components/Box";
+import Piece from "Components/Piece";
 import React, { FC, useCallback } from "react";
-import Box from "./Box";
-import Piece from "./Piece";
 
 type EmptyBox = {
   isHighlighted: boolean;

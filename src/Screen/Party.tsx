@@ -2,9 +2,9 @@ import { CoordinatesStr } from "amaurycoudr-checkers/utils/type";
 import classNames from "classnames";
 import { filter, map } from "lodash";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import Board from "../Component/Board";
-import PartyState from "../Component/PartyState";
-import usePartyContext from "../Context/partyContext";
+import Board from "Components/Board";
+import PartyState from "Components/PartyState";
+import usePartyContext from "Context/partyContext";
 
 const Party = () => {
   const partyState = usePartyContext((state) => state.partyState);

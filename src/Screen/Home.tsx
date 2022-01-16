@@ -1,10 +1,9 @@
+import { PlayIcon } from "@heroicons/react/solid";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-import Typos from "../Component/core/Typos";
-import LinkButton from "../Component/LinkButton";
-import LogoBoxes from "../Component/LogoBoxes";
-import { PlayIcon } from "@heroicons/react/solid";
+import Typos from "Components/core/Typos";
+import LinkButton from "Components/core/LinkButton";
+import LogoBoxes from "Components/LogoBoxes";
 const Home = () => {
   const { t } = useTranslation();
 
@@ -18,7 +17,11 @@ const Home = () => {
         {t("home.subTitle")}
       </Typos.H5>
       <div className="flex mt-4">
-        <LinkButton to="/party" type="primary" IconRight={PlayIcon}>
+        <LinkButton
+          to="/party"
+          type="primary"
+          iconRight={<PlayIcon className="h-5 w-5 mt-[1px] mx-2" />}
+        >
           {t("home.playOffline")}
         </LinkButton>
       </div>
