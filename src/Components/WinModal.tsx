@@ -1,11 +1,7 @@
-import { Dialog } from "@headlessui/react";
 import { Color } from "amaurycoudr-checkers/utils/type";
-import classNames from "classnames";
-import Button from "Components/core/Button";
-import { textColors } from "Components/core/Typos";
 import Modal from "Components/Modal";
 import Piece from "Components/Piece";
-import React, { useRef } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 
 interface Props {
