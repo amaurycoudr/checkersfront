@@ -1,11 +1,14 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
+import "./i18n";
 import "./index.css";
-import App from "./App";
+import Router from "./navigation/Router";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Suspense fallback="loading">
+      <Router />
+    </Suspense>
   </React.StrictMode>,
   document.getElementById("root")
 );

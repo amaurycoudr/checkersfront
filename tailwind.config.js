@@ -1,9 +1,13 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       animation: {
-        blob: "blob 7s infinite",
+        blob: "blob 2s infinite",
+      },
+      spacing: {
+        header: "10vh",
       },
       keyframes: {
         blob: {
@@ -17,9 +21,13 @@ module.exports = {
             transform: "translate(-20px, 20px) scale(0.9)",
           },
           "100%": {
-            transform: "tranlate(0px, 0px) scale(1)",
+            transform: "translate(0px, 0px) scale(1)",
           },
         },
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
       },
     },
   },

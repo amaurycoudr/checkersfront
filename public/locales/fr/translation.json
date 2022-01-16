@@ -1,0 +1,17 @@
+{
+  "base": { "name": "Dames" },
+  "home": {
+    "subTitle": "Joue au jeu de Dames contre tes amis !",
+    "playOffline": "Jouer en local",
+    "playOnline": "Jouer en ligne"
+  },
+  "notFound": {
+    "title": "mes Dames !",
+    "subTitle": "Ce n'est pas le bon chemin...",
+    "home": "Retourner à l'accueil",
+    "play": "Lancer une partie"
+  },
+  "navBar": {
+    "switchDark": "change le mode Dark/light"
+  }
+}
