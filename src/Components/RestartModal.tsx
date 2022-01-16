@@ -24,7 +24,7 @@ const RestartModal = ({ isOpen, onClose, onRestart }: Props) => {
       description={t("restartModal.description")}
       title={t("restartModal.title")}
     >
-      <ExclamationIcon className="h-16 w-16 text-red-600" />
+      <ExclamationIcon className="h-16 w-16 mt-2 text-red-400" />
     </Modal>
   );
 };

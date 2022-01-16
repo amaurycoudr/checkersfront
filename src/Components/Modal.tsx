@@ -2,8 +2,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import classNames from "classnames";
 import Button from "Components/core/Button";
 import { textColors } from "Components/core/Typos";
-import Piece from "Components/Piece";
-import React, { FC, Fragment, ReactNode, useRef } from "react";
+import React, { FC, Fragment, useRef } from "react";
 
 interface Props {
   isOpen: boolean;
